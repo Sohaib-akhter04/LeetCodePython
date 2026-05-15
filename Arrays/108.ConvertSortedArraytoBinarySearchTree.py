@@ -1,4 +1,9 @@
 # Given an integer array nums where the elements are sorted in ascending order, convert it to a height-balanced binary search tree.
+# Explanation:
+# - Choose the middle element as the root to maintain balance.
+# - Recursively build the left subtree from elements before mid.
+# - Recursively build the right subtree from elements after mid.
+# - This produces a BST where depths of subtrees differ by at most one.
 from typing import Optional, List
 from xml.dom.minidom import Node
 class TreeNode:

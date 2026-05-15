@@ -1,4 +1,8 @@
-# Write a function to find the longest common prefix string amongst an array of strings.If there is no common prefix, return an empty string 
+# 14.Write a function to find the longest common prefix string amongst an array of strings.If there is no common prefix, return an empty string 
+# Explanation:
+# - Find the shortest string in the list, because the prefix cannot be longer.
+# - Compare characters at each index across all strings.
+# - Stop when a mismatch occurs and return the prefix built so far.
 from typing import List
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:

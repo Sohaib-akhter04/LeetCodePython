@@ -1,4 +1,8 @@
 # 217. Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+# Explanation:
+# - Use a dictionary to track whether a number has been seen before.
+# - If a number is seen again, return True immediately.
+# - If the loop finishes, no duplicates were found.
 from typing import List
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:

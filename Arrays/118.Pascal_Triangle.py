@@ -1,6 +1,10 @@
 # 118. Pascal's Triangle
 # Given an integer numRows, return the first numRows of Pascal's triangle.
-
+# Explanation:
+# - The first row is [1].
+# - Each new row starts and ends with 1.
+# - Each interior value is the sum of the two values above it from the previous row.
+# - Build the triangle row by row, using the previous row to compute the next.
 # In Pascal's triangle, each number is the sum of the two numbers directly above it as shown:
 from typing import List
 class Solution:

@@ -1,4 +1,9 @@
-# Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.
+# 1.Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.
+# Explanation:
+# - Use a hash map to record each number's index as you iterate.
+# - For each number, compute complement = target - num.
+# - If complement has already been seen, return its index and current index.
+# - This gives a one-pass O(n) solution.
 
 from typing import List
 

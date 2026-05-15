@@ -1,5 +1,9 @@
 # Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.
 # Consider the number of unique elements in nums to be k​​​​​​​​​​​​​​. After removing duplicates, return the number of unique elements k.The first k elements of nums should contain the unique numbers in sorted order. The remaining elements beyond index k - 1 can be ignored.
+# Explanation:
+# - Use two pointers: i marks the position for the next unique element, j scans through the array.
+# - When nums[j] differs from the last unique value, write it at nums[i] and increment i.
+# - Return i as the count of unique values.
 from typing import List
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:

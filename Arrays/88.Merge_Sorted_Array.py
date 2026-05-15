@@ -1,4 +1,9 @@
 #You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
+# Explanation:
+# - Append nums2 elements to the end of nums1.
+# - Sort the merged array using a merge sort helper.
+# - Copy the sorted results back into nums1.
+# - This uses extra space from merge sort but preserves the required output array.
 from typing import List
 from typing import List
 
