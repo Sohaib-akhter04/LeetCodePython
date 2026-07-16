@@ -9,7 +9,7 @@
 # move diagonally sqrt(2) units (in other words, move one unit vertically then one unit horizontally in 1 second).
 # You have to visit the points in the same order as they appear in the array.
 # You are allowed to pass through points that appear later in the order, but these do not count as visits.
-
+from typing import List
 class Solution:
     def minTimeToVisitAllPoints(self, points: List[List[int]]) -> int:
         ans=0
