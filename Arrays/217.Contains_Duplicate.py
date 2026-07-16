@@ -13,7 +13,8 @@ class Solution:
             else:
                 dict[num]=1
         return False
-        
+
+
 solution=Solution()
-nums = [1,2,3]
+nums = [1,2,3,1]
 print(solution.containsDuplicate(nums))
